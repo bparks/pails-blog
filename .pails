@@ -1,5 +1,0 @@
-{
-	"name": "blog",
-	"index": "index.php",
-	"deps": ["activerecord", "auth", "form_builder", "content"]
-}

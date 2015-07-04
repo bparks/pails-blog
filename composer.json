@@ -1,0 +1,14 @@
+{
+	"name": "auth/blog",
+	"deps": ["activerecord", "auth", "form_builder", "content"],
+	"autoload": {
+		"files": ["index.php"]
+	},
+	"require": {
+		"pails/pails": "dev-master",
+		"php-activerecord/php-activerecord": "dev-develop",
+		"pails/auth": "dev-master",
+		"pails/form_builder": "dev-master",
+		"pails/content": "dev-master"
+	}
+}

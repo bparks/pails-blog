@@ -18,8 +18,6 @@ class BlogController extends \Pails\Controller
 		$node = Node::create(array(
 			'title' => $_POST['title'],
 			'slug' => $_POST['slug'],
-			'summary' => $_POST['summary'],
-			'user_id' => $this->current_user()->user_id,
 			'type' => 'blog'
 		));
 
@@ -28,11 +26,11 @@ class BlogController extends \Pails\Controller
 			'node_id' => $node->id
 		));
 
-		// $blog = Blog::create(array(
-		// 	'summary' => $_POST['summary'],
-		// 	'node_id' => $node->id,
-		// 	'user_id' => $this->current_user()->user_id
-		// ));
+		$blog = Blog::create(array(
+			'summary' => $_POST['summary'],
+			'node_id' => $node->id,
+			'user_id' => $this->current_user()->user_id
+		));
 
 		$this->model = $blog->get_url();
 		return 302;
@@ -90,6 +88,7 @@ class BlogController extends \Pails\Controller
 	//Handle everything else
 	function __call($name, $arguments) {
 		if ($name == 'new') {
+			$this->require_login();
 			$this->view = 'blog/new';
 			return;
 		}
