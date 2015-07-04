@@ -1,5 +1,5 @@
 {
-	"name": "auth/blog",
+	"name": "pails/blog",
 	"deps": ["activerecord", "auth", "form_builder", "content"],
 	"autoload": {
 		"files": ["index.php"]
