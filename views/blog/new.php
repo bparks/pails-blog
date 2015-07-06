@@ -1,4 +1,4 @@
-<script src="/lib/content/ckeditor/ckeditor.js"></script>
+<script src="/vendor/pails/content/ckeditor/ckeditor.js"></script>
 
 <form action="/blog/create" method="POST">
 <?php echo $this->input_for('title', 'Title'); ?>

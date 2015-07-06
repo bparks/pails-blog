@@ -1,4 +1,4 @@
-<script src="/lib/content/ckeditor/ckeditor.js"></script>
+<script src="/vendor/pails/content/ckeditor/ckeditor.js"></script>
 
 <form action="/blog/update" method="POST">
 <?php echo $this->input_for('id', '', array('type' => 'hidden', 'value' => $this->model->id)); ?>
