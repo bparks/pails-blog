@@ -5,10 +5,10 @@
 		"files": ["index.php"]
 	},
 	"require": {
-		"pails/pails": "dev-master",
+		"pails/pails": "^1.0",
 		"php-activerecord/php-activerecord": "dev-develop",
-		"pails/auth": "dev-master",
-		"pails/form_builder": "dev-master",
+		"pails/auth": "^1.0",
+		"pails/form_builder": "^1.0",
 		"pails/content": "dev-master"
 	}
 }
