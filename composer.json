@@ -9,6 +9,6 @@
 		"pails/activerecord": "^1.2",
 		"pails/auth": "^1.0",
 		"pails/form_builder": "^1.0",
-		"pails/content": "dev-master"
+		"pails/content": "^1.0"
 	}
 }
